@@ -34,7 +34,7 @@ const tarefas = [
   }
 ]
 
-function App() {
+const App = () => {
   return <></>;
 }
 
