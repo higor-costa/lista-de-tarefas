@@ -7,3 +7,8 @@
   outline: none;
   font-family: 'Josefin Sans', sans-serif;
 }
+
+.cabecalho {
+  height: 17rem;
+  background: url('./assets/images/bg-desktop-light.jpg') center/cover no-repeat;
+}
