@@ -35,7 +35,11 @@ const tarefas = [
 ]
 
 const App = () => {
-  return <></>;
+  return (
+    <>
+      <header className={styles.cabecalho}></header>
+    </>
+  );
 }
 
 export default App;
