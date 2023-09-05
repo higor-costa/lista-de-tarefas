@@ -1,5 +1,7 @@
 import React from 'react';
-import './App.css';
+
+// Estilo
+import styles from './App.module.css';
 
 const tarefas = [
   {
