@@ -8,6 +8,19 @@
   font-family: 'Josefin Sans', sans-serif;
 }
 
+:root {
+  /* Cores neutras */
+  --azul-claro: hsl(220, 98%, 61%);
+  --linear-gradiente: linear-gradient(to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+
+  /* Tema Claro */
+  --cinza-muito-claro: hsl(0, 0%, 98%);
+  --azul-acinzentado-muito-claro: hsl(236, 33%, 92%);
+  --azul-acinzentado-claro: hsl(233, 11%, 84%);
+  --azul-acinzentado-escuro: hsl(236, 9%, 61%);
+  --azul-acinzentado-muito-escuro: hsl(235, 19%, 35%);
+}
+
 .cabecalho {
   height: 17rem;
   background: url('./assets/images/bg-desktop-light.jpg') center/cover no-repeat;
