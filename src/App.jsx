@@ -64,6 +64,15 @@ const App = () => {
             />
           </form>
         </header>
+
+        <main className={styles.conteinerTarefas}>
+          <ListaTarefas tarefas={tarefas}/>
+          <footer>
+            <p>{tarefas.length} tarefas</p>
+            <NavegacaoTarefas />
+            <button type="reset" className={styles.apagarTarefas}>Apagar tarefas</button>
+          </footer>
+        </main>
       </main>
     </>
   );
