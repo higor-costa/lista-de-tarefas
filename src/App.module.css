@@ -33,3 +33,38 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
+.conteudoCabecalho div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.conteudoCabecalho h1 {
+  color: var(--cinza-muito-claro);
+  font-size: 2rem;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+.conteudoCabecalho .iconeTema {
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  background: var(--cinza-muito-claro);
+  padding: 20px 20px 15px;
+  border-radius: 5px;
+}
+
+form .campoNovaTarefa {
+  border: none;
+  color: var(--azul-acinzentado-muito-escuro);
+  width: 85%;
+}
+
+form .campoNovaTarefa::placeholder {
+  color: var(--azul-acinzentado-escuro);
+}
