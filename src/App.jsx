@@ -3,6 +3,7 @@ import React from 'react';
 // Componentes
 import Checkbox from './assets/components/Checkbox';
 import ListaTarefas from './assets/components/ListaTarefas';
+import NavegacaoTarefas from './assets/components/NavegacaoTarefas';
 
 // Estilo
 import styles from './App.module.css';
