@@ -1,5 +1,8 @@
 import React from 'react';
 
+// Componentes
+import Checkbox from './assets/components/Checkbox';
+
 // Estilo
 import styles from './App.module.css';
 
