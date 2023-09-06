@@ -69,3 +69,40 @@ form .campoNovaTarefa {
 form .campoNovaTarefa::placeholder {
   color: var(--azul-acinzentado-escuro);
 }
+
+.conteinerTarefas {
+  background: var(--cinza-muito-claro);
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 1px hsl(235deg 19% 35% / 19%);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px 10px;
+}
+
+footer p {
+  padding-top: 8px;
+}
+
+footer p,
+footer button {
+  font-size: .7rem;
+  font-weight: 700;
+  color: var(--azul-acinzentado-escuro);
+}
+
+footer button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 10px 5px 0px;
+  transition: color .4s;
+}
+
+footer button:hover {
+  color: var(--azul-acinzentado-muito-escuro);
+}
