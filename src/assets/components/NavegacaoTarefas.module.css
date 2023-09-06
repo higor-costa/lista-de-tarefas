@@ -1,0 +1,11 @@
+.navegacaoTarefas li {
+  display: inline-block;
+}
+
+.navegacaoTarefas li:nth-child(2) {
+  margin: 0 15px;
+}
+
+.navegacaoTarefas button.ativo {
+  color: var(--azul-claro);
+}
