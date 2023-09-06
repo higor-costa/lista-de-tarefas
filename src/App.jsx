@@ -6,6 +6,9 @@ import Checkbox from './assets/components/Checkbox';
 // Estilo
 import styles from './App.module.css';
 
+// SVG
+import { ReactComponent as Lua } from './assets/images/icon-moon.svg';
+
 const tarefas = [
   {
     id: 1,
