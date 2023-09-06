@@ -12,7 +12,7 @@
 :root {
   /* Cores neutras */
   --azul-claro: hsl(220, 98%, 61%);
-  --linear-gradiente: linear-gradient(to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  --linear-gradiente: linear-gradient(to bottom, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
 
   /* Tema Claro */
   --cinza-muito-claro: hsl(0, 0%, 98%);
