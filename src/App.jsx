@@ -40,6 +40,23 @@ const App = () => {
   return (
     <>
       <header className={styles.cabecalho}></header>
+      <main className={styles.conteudo}>
+        <header className={styles.conteudoCabecalho}>
+          <div>
+            <h1>Todo</h1>
+            <Lua className={styles.iconeTema} />
+          </div>
+          <form>
+            <Checkbox />
+            <input
+              type="text"
+              id="novaTarefa"
+              className={styles.campoNovaTarefa}
+              placeholder='Crie uma nova tarefa...'
+            />
+          </form>
+        </header>
+      </main>
     </>
   );
 }
