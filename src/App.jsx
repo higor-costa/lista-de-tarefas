@@ -2,6 +2,7 @@ import React from 'react';
 
 // Componentes
 import Checkbox from './assets/components/Checkbox';
+import ListaTarefas from './assets/components/ListaTarefas';
 
 // Estilo
 import styles from './App.module.css';
