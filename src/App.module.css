@@ -22,6 +22,10 @@
   --azul-acinzentado-muito-escuro: hsl(235, 19%, 35%);
 }
 
+body {
+  background: var(--cinza-muito-claro);
+}
+
 .cabecalho {
   height: 17rem;
   background: url('./assets/images/bg-desktop-light.jpg') center/cover no-repeat;
