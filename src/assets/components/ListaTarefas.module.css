@@ -32,3 +32,9 @@ input[type="checkbox"]:checked + label {
 .tarefa:hover .iconDeletaTarefa {
   opacity: 1;
 }
+
+@media screen and (max-width: 630px) {
+  .tarefa label {
+    font-size: .8rem;
+  }
+}
