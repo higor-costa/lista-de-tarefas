@@ -74,10 +74,15 @@ const App = () => {
           <ListaTarefas tarefas={tarefas}/>
           <footer>
             <p>{tarefas.length} tarefas</p>
-            <NavegacaoTarefas />
+            {dispositivoMovel ? '' : <NavegacaoTarefas />}
             <button type="reset" className={styles.apagarTarefas}>Apagar tarefas</button>
           </footer>
         </main>
+        {dispositivoMovel ? (
+          <footer className={styles.rodapeDispositivoMovel}>
+            <NavegacaoTarefas />
+          </footer>
+        ) : ('')}
       </main>
     </>
   );
