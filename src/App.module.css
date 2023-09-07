@@ -106,3 +106,9 @@ footer button {
 footer button:hover {
   color: var(--azul-acinzentado-muito-escuro);
 }
+
+@media screen and (max-width: 630px){
+  .cabecalho {
+    background: url('./assets/images/bg-mobile-light.jpg') center/cover no-repeat;
+  }
+}
