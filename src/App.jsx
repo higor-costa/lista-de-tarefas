@@ -48,6 +48,8 @@ const tarefas = [
 ];
 
 const App = () => {
+  const dispositivoMovel = useMedia('(max-width: 630px)');
+
   return (
     <>
       <header className={styles.cabecalho}></header>
