@@ -5,6 +5,9 @@ import Checkbox from './assets/components/Checkbox';
 import ListaTarefas from './assets/components/ListaTarefas';
 import NavegacaoTarefas from './assets/components/NavegacaoTarefas';
 
+// Hooks
+import useMedia from './assets/hooks/useMedia';
+
 // Estilo
 import styles from './App.module.css';
 
