@@ -111,4 +111,8 @@ footer button:hover {
   .cabecalho {
     background: url('./assets/images/bg-mobile-light.jpg') center/cover no-repeat;
   }
+
+  .conteudo {
+    width: 90%;
+  }
 }
