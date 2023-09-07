@@ -9,3 +9,9 @@
 .navegacaoTarefas button.ativo {
   color: var(--azul-claro);
 }
+
+@media screen and (max-width: 630px) {
+  nav {
+    margin: 0 auto;
+  }
+}
