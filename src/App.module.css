@@ -107,6 +107,17 @@ footer button:hover {
   color: var(--azul-acinzentado-muito-escuro);
 }
 
+.rodapeDispositivoMovel {
+  background: var(--cinza-muito-claro);
+  box-shadow: 0 0 10px 1px hsl(235deg 19% 35% / 19%);
+  border-radius: 5px;
+  padding: 10px 0 15px;
+}
+
+.rodapeDispositivoMovel button {
+  font-size: .8rem;
+}
+
 @media screen and (max-width: 630px){
   .cabecalho {
     background: url('./assets/images/bg-mobile-light.jpg') center/cover no-repeat;
