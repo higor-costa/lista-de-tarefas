@@ -1,7 +1,6 @@
 import React from 'react';
 
 // Componentes
-import Checkbox from './assets/components/Checkbox';
 import ListaTarefas from './assets/components/ListaTarefas';
 import NavegacaoTarefas from './assets/components/NavegacaoTarefas';
 
@@ -49,6 +48,14 @@ const tarefas = [
 
 const App = () => {
   const dispositivoMovel = useMedia('(max-width: 630px)');
+  const [listaTarefas, setListaTarefas] = React.useState(tarefas);
+  const [checkbox, setCheckbox] = React.useState(false);
+  const [novaTarefa, setNovaTarefa] = React.useState('');
+
+  function adicionaTarefa() {
+    if (novaTarefa.length > 0) setListaTarefas([...listaTarefas, {id: ++tarefas.length, nome: novaTarefa, concluida: false}]);
+    setNovaTarefa('');
+  }
 
   return (
     <>
@@ -60,18 +67,20 @@ const App = () => {
             <Lua className={styles.iconeTema} />
           </div>
           <form>
-            <Checkbox />
+            <input type="checkbox" checked={checkbox} onChange={adicionaTarefa} />
             <input
               type="text"
               id="novaTarefa"
               className={styles.campoNovaTarefa}
               placeholder="Crie uma nova tarefa..."
+              value={novaTarefa}
+              onChange={({ target }) => setNovaTarefa(target.value)}
             />
           </form>
         </header>
 
         <main className={styles.conteinerTarefas}>
-          <ListaTarefas tarefas={tarefas}/>
+          <ListaTarefas tarefas={listaTarefas}/>
           <footer>
             <p>{tarefas.length} tarefas</p>
             {dispositivoMovel ? '' : <NavegacaoTarefas />}
