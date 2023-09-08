@@ -9,7 +9,15 @@ import styles from './ListaTarefas.module.css';
 // SVG
 import { ReactComponent  as DeletaTarefa} from '../images/icon-cross.svg';
 
-const ListaTarefas = ({tarefas}) => {
+const ListaTarefas = ({ tarefas, setListaTarefas }) => {
+  function removerTarefa({ target }) {
+    const idBotaoDelete = +target.parentNode.id;
+    const listaAtualizada = tarefas.filter((tarefa) => {
+      return tarefa.id === idBotaoDelete ? null : tarefa;
+    });
+    setListaTarefas(listaAtualizada);
+  }
+
   return (
     <ul>
       {tarefas.map(({ nome, id }) => {
@@ -19,7 +27,9 @@ const ListaTarefas = ({tarefas}) => {
               <Checkbox id={id}/>
               <label htmlFor={id}>{nome}</label>
             </div>
-            <DeletaTarefa className={styles.iconDeletaTarefa} />
+            <button type="button" id={id} >
+              <DeletaTarefa className={styles.iconDeletaTarefa} onClick={removerTarefa} />
+            </button>
           </li>
         );
       })}
