@@ -80,7 +80,7 @@ const App = () => {
         </header>
 
         <main className={styles.conteinerTarefas}>
-          <ListaTarefas tarefas={listaTarefas}/>
+          <ListaTarefas tarefas={listaTarefas} setListaTarefas={setListaTarefas} />
           <footer>
             <p>{tarefas.length} tarefas</p>
             {dispositivoMovel ? '' : <NavegacaoTarefas />}
