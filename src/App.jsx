@@ -57,6 +57,10 @@ const App = () => {
     setNovaTarefa('');
   }
 
+  function apagaTodasTarefas() {
+    setListaTarefas([]);
+  }
+
   return (
     <>
       <header className={styles.cabecalho}></header>
@@ -84,7 +88,7 @@ const App = () => {
           <footer>
             <p>{tarefas.length} tarefas</p>
             {dispositivoMovel ? '' : <NavegacaoTarefas />}
-            <button type="reset" className={styles.apagarTarefas}>Apagar tarefas</button>
+            <button type="reset" className={styles.apagarTarefas} onClick={apagaTodasTarefas} >Apagar tarefas</button>
           </footer>
         </main>
         {dispositivoMovel ? (
