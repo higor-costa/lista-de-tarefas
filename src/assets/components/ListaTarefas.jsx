@@ -18,13 +18,22 @@ const ListaTarefas = ({ tarefas, setListaTarefas }) => {
     setListaTarefas(listaAtualizada);
   }
 
+  function estadoTarefa({ target }) {
+    const idCheckbox = +target.id;
+    const listaAtualizada = tarefas.map((tarefa) => {
+      return tarefa.id === idCheckbox ? { ...tarefa, concluida: !tarefa.concluida } : tarefa;
+    });
+    
+    setListaTarefas(listaAtualizada);
+  }
+
   return (
     <ul>
-      {tarefas.map(({ nome, id }) => {
+      {tarefas.map(({ nome, id, concluida }) => {
         return (
           <li key={id} className={styles.tarefa}>
             <div>
-              <Checkbox id={id}/>
+              <Checkbox id={id} concluida={concluida} estadoTarefa={estadoTarefa} />
               <label htmlFor={id}>{nome}</label>
             </div>
             <button type="button" id={id} >
