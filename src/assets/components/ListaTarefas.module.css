@@ -24,6 +24,12 @@ input[type="checkbox"]:checked + label {
   color: var(--azul-acinzentado-claro);
 }
 
+.tarefa button {
+  background: transparent;
+  border: none;
+  display: flex;
+}
+
 .tarefa .iconDeletaTarefa {
   opacity: 0;
   cursor: pointer;
