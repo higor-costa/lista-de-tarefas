@@ -3,15 +3,13 @@ import React from 'react';
 // Componentes
 import ListaTarefas from './assets/components/ListaTarefas';
 import NavegacaoTarefas from './assets/components/NavegacaoTarefas';
+import Tema from './assets/components/Tema';
 
 // Hooks
 import useMedia from './assets/hooks/useMedia';
 
 // Estilo
 import styles from './App.module.css';
-
-// SVG
-import { ReactComponent as Lua } from './assets/images/icon-moon.svg';
 
 const tarefas = [
   {
@@ -68,7 +66,7 @@ const App = () => {
         <header className={styles.conteudoCabecalho}>
           <div>
             <h1>Todo</h1>
-            <Lua className={styles.iconeTema} />
+            <Tema />
           </div>
           <form>
             <input type="checkbox" checked={checkbox} onChange={adicionaTarefa} />
