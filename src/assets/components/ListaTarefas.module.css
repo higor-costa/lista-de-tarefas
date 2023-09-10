@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
-  border-bottom : 1px solid var(--azul-acinzentado-claro);
+  border-bottom : 1px solid var(--tarefa-concluida);
 }
 
 .tarefa div {
@@ -16,12 +16,12 @@
 .tarefa label {
   font-size: .9rem;
   font-weight: 700;
-  color: var(--azul-acinzentado-muito-escuro);
+  color: var(--nome-tarefa);
 }
 
 input[type="checkbox"]:checked + label {
   text-decoration: line-through;
-  color: var(--azul-acinzentado-claro);
+  color: var(--tarefa-concluida);
 }
 
 .tarefa button {

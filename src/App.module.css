@@ -15,15 +15,15 @@
   --linear-gradiente: linear-gradient(to bottom, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
 
   /* Tema Claro */
-  --cinza-muito-claro: hsl(0, 0%, 98%);
-  --azul-acinzentado-muito-claro: hsl(236, 33%, 92%);
-  --azul-acinzentado-claro: hsl(233, 11%, 84%);
-  --azul-acinzentado-escuro: hsl(236, 9%, 61%);
-  --azul-acinzentado-muito-escuro: hsl(235, 19%, 35%);
+  --fundo-lista-tarefas: hsl(0, 0%, 98%);
+  --body: hsl(236, 33%, 92%);
+  --tarefa-concluida: hsl(233, 11%, 84%);
+  --placeholder-e-rodape: hsl(236, 9%, 61%);
+  --nome-tarefa: hsl(235, 19%, 35%);
 }
 
 body {
-  background: var(--cinza-muito-claro);
+  background: var(--body);
 }
 
 .cabecalho {
@@ -46,7 +46,7 @@ body {
 }
 
 .conteudoCabecalho h1 {
-  color: var(--cinza-muito-claro);
+  color: white;
   font-size: 2rem;
   letter-spacing: 10px;
   text-transform: uppercase;
@@ -59,23 +59,24 @@ body {
 form {
   display: flex;
   align-items: center;
-  background: var(--cinza-muito-claro);
+  background: var(--fundo-lista-tarefas);
   padding: 20px 20px 15px;
   border-radius: 5px;
 }
 
 form .campoNovaTarefa {
   border: none;
-  color: var(--azul-acinzentado-muito-escuro);
+  color: var(--nome-tarefa);
+  background: transparent;
   width: 85%;
 }
 
 form .campoNovaTarefa::placeholder {
-  color: var(--azul-acinzentado-escuro);
+  color: var(--placeholder-e-rodape);
 }
 
 .conteinerTarefas {
-  background: var(--cinza-muito-claro);
+  background: var(--fundo-lista-tarefas);
   margin: 20px 0;
   border-radius: 5px;
   box-shadow: 0 0 10px 1px hsl(235deg 19% 35% / 19%);
@@ -96,7 +97,7 @@ footer p,
 footer button {
   font-size: .7rem;
   font-weight: 700;
-  color: var(--azul-acinzentado-escuro);
+  color: var(--placeholder-e-rodape);
 }
 
 footer button {
@@ -108,11 +109,11 @@ footer button {
 }
 
 footer button:hover {
-  color: var(--azul-acinzentado-muito-escuro);
+  color: var(--nome-tarefa);
 }
 
 .rodapeDispositivoMovel {
-  background: var(--cinza-muito-claro);
+  background: var(--fundo-lista-tarefas);
   box-shadow: 0 0 10px 1px hsl(235deg 19% 35% / 19%);
   border-radius: 5px;
   padding: 10px 0 15px;
