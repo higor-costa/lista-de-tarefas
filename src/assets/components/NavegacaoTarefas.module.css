@@ -6,7 +6,7 @@
   margin: 0 15px;
 }
 
-.navegacaoTarefas button.ativo {
+.navegacaoTarefas li:nth-child(1) button {
   color: var(--azul-claro);
 }
 
