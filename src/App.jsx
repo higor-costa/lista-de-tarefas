@@ -86,13 +86,13 @@ const App = () => {
           <ListaTarefas tarefas={listaTarefas} setListaTarefas={setListaTarefas} filtro={filtro}/>
           <footer>
             <p>{tarefas.length} tarefas</p>
-            {dispositivoMovel ? '' : <NavegacaoTarefas />}
+            {dispositivoMovel ? '' : <NavegacaoTarefas setFiltro={setFiltro} />}
             <button type="reset" className={styles.apagarTarefas} onClick={apagaTodasTarefas} >Apagar tarefas</button>
           </footer>
         </main>
         {dispositivoMovel ? (
           <footer className={styles.rodapeDispositivoMovel}>
-            <NavegacaoTarefas />
+            <NavegacaoTarefas setFiltro={setFiltro} />
           </footer>
         ) : ('')}
       </main>
