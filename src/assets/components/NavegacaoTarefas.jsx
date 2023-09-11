@@ -5,6 +5,15 @@ import styles from './NavegacaoTarefas.module.css';
 
 const NavegacaoTarefas = ({ setFiltro }) => {
   
+  function defineCorBotao(botao) {
+    const botoes = document.querySelectorAll('.botaoFiltro');
+    botoes.forEach((botao) => {
+      botao.style.color = 'var(--placeholder-e-rodape)';
+    });
+
+    botao.style.color = 'var(--azul-claro)';
+  }
+
   function filtraTarefas(evento, filtro) {
     const botao = evento.target;
     setFiltro(filtro);
