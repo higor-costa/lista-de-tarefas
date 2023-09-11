@@ -4,6 +4,13 @@ import React from 'react';
 import styles from './NavegacaoTarefas.module.css';
 
 const NavegacaoTarefas = ({ setFiltro }) => {
+  
+  function filtraTarefas(evento, filtro) {
+    const botao = evento.target;
+    setFiltro(filtro);
+    defineCorBotao(botao);
+  }
+  
   return (
     <nav>
       <ul className={styles.navegacaoTarefas}>
