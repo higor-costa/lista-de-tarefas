@@ -9,7 +9,7 @@ import styles from './ListaTarefas.module.css';
 // SVG
 import { ReactComponent  as DeletaTarefa} from '../images/icon-cross.svg';
 
-const ListaTarefas = ({ tarefas, setListaTarefas }) => {
+const ListaTarefas = ({ tarefas, setListaTarefas, filtro }) => {
   function removerTarefa({ target }) {
     const idBotaoDelete = +target.parentNode.id;
     const listaAtualizada = tarefas.filter((tarefa) => {
