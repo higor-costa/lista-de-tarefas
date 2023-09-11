@@ -3,7 +3,7 @@ import React from 'react';
 // Estilos
 import styles from './NavegacaoTarefas.module.css';
 
-const NavegacaoTarefas = () => {
+const NavegacaoTarefas = ({ setFiltro }) => {
   return (
     <nav>
       <ul className={styles.navegacaoTarefas}>
