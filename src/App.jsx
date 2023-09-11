@@ -49,6 +49,7 @@ const App = () => {
   const [listaTarefas, setListaTarefas] = React.useState(tarefas);
   const [checkbox, setCheckbox] = React.useState(false);
   const [novaTarefa, setNovaTarefa] = React.useState('');
+  const [filtro, setFiltro] = React.useState('todas');
 
   function adicionaTarefa() {
     if (novaTarefa.length > 0) setListaTarefas([...listaTarefas, {id: ++tarefas.length, nome: novaTarefa, concluida: false}]);
