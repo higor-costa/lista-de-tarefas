@@ -9,7 +9,7 @@ import styles from './ListaTarefas.module.css';
 // SVG
 import { ReactComponent  as DeletaTarefa} from '../images/icon-cross.svg';
 
-const ListaTarefas = ({ tarefas, setListaTarefas }) => {
+const ListaTarefas = ({ tarefas, setListaTarefas, filtro }) => {
   function removerTarefa({ target }) {
     const idBotaoDelete = +target.parentNode.id;
     const listaAtualizada = tarefas.filter((tarefa) => {
@@ -41,7 +41,7 @@ const ListaTarefas = ({ tarefas, setListaTarefas }) => {
 
   return (
     <ul>
-      {tarefas.map(({ nome, id, concluida }) => {
+      {tarefasFiltradas.map(({ nome, id, concluida }) => {
         return (
           <li key={id} className={styles.tarefa}>
             <div>
