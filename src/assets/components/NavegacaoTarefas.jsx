@@ -19,18 +19,18 @@ const NavegacaoTarefas = ({ setFiltro }) => {
     setFiltro(filtro);
     defineCorBotao(botao);
   }
-  
+
   return (
     <nav>
       <ul className={styles.navegacaoTarefas}>
         <li>
-          <button>Todas</button>
+          <button className='botaoFiltro' onClick={(evento) => filtraTarefas(evento, 'todas')}>Todas</button>
         </li>
         <li>
-          <button>Ativas</button>
+          <button className='botaoFiltro' onClick={(evento) => filtraTarefas(evento, 'ativas')}>Ativas</button>
         </li>
         <li>
-          <button>Concluídas</button>
+          <button className='botaoFiltro' onClick={(evento) => filtraTarefas(evento, 'concluidas')}>Concluídas</button>
         </li>
       </ul>
     </nav>
