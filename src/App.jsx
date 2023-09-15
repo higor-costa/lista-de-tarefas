@@ -46,10 +46,21 @@ const tarefas = [
 
 const App = () => {
   const dispositivoMovel = useMedia('(max-width: 630px)');
-  const [listaTarefas, setListaTarefas] = React.useState(tarefas);
+  const [listaTarefas, setListaTarefas] = React.useState(() => {
+    const objetoTarefas = window.localStorage.getItem('Tarefas');
+    return objetoTarefas ? JSON.parse(objetoTarefas) : [];
+  });
   const [checkbox, setCheckbox] = React.useState(false);
   const [novaTarefa, setNovaTarefa] = React.useState('');
   const [filtro, setFiltro] = React.useState('todas');
+
+  React.useEffect(() => {
+    function armazenamentoLocal(listaTarefas) {
+      const tarefas = JSON.stringify(listaTarefas);
+      window.localStorage.setItem('Tarefas', tarefas);
+    }
+    armazenamentoLocal(listaTarefas);
+  }, [listaTarefas]);
 
   function adicionaTarefa() {
     if (novaTarefa.length > 0) setListaTarefas([...listaTarefas, {id: ++tarefas.length, nome: novaTarefa, concluida: false}]);
