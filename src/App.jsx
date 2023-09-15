@@ -99,7 +99,7 @@ const App = () => {
         <main className={styles.conteinerTarefas}>
           <ListaTarefas tarefas={listaTarefas} setListaTarefas={setListaTarefas} filtro={filtro}/>
           <footer>
-            <p>{tarefas.length} tarefas</p>
+            <p>{listaTarefas.length} tarefas</p>
             {dispositivoMovel ? '' : <NavegacaoTarefas setFiltro={setFiltro} />}
             <button type="reset" className={styles.apagarTarefas} onClick={apagaTodasTarefas} >Apagar tarefas</button>
           </footer>
