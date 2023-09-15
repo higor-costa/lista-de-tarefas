@@ -63,8 +63,11 @@ const App = () => {
   }, [listaTarefas]);
 
   function adicionaTarefa() {
-    if (novaTarefa.length > 0) setListaTarefas([...listaTarefas, {id: Math.round(Math.random() * 100000), nome: novaTarefa, concluida: false}]);
-    setNovaTarefa('');
+    if (novaTarefa.length > 0) {
+      const listaAtualizada = [...listaTarefas, {id: ++tarefas.length, nome: novaTarefa, concluida: false}];
+      setListaTarefas(listaAtualizada);
+      setNovaTarefa('');
+    }
   }
 
   function apagaTodasTarefas() {
