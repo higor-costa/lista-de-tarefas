@@ -63,19 +63,25 @@ const App = () => {
           </form>
         </header>
 
-        <main className={styles.conteinerTarefas}>
-          <ListaTarefas tarefas={listaTarefas} setListaTarefas={setListaTarefas} filtro={filtro}/>
-          <footer>
-            <p>{listaTarefas.length} tarefas</p>
-            {dispositivoMovel ? '' : <NavegacaoTarefas setFiltro={setFiltro} />}
-            <button type="reset" className={styles.apagarTarefas} onClick={apagaTodasTarefas} >Apagar tarefas</button>
-          </footer>
-        </main>
-        {dispositivoMovel ? (
-          <footer className={styles.rodapeDispositivoMovel}>
-            <NavegacaoTarefas setFiltro={setFiltro} />
-          </footer>
-        ) : ('')}
+        {listaTarefas.length === 0 ? (
+          <p className={styles.listaVazia}>Adicione uma nova tarefa</p>
+        ) : (
+          <>
+            <main className={styles.conteinerTarefas}>
+              <ListaTarefas tarefas={listaTarefas} setListaTarefas={setListaTarefas} filtro={filtro}/>
+              <footer>
+                <p>{listaTarefas.length} tarefas</p>
+                {dispositivoMovel ? '' : <NavegacaoTarefas setFiltro={setFiltro} />}
+                <button type="reset" className={styles.apagarTarefas} onClick={apagaTodasTarefas} >Apagar tarefas</button>
+              </footer>
+            </main>
+            {dispositivoMovel ? (
+              <footer className={styles.rodapeDispositivoMovel}>
+                <NavegacaoTarefas setFiltro={setFiltro} />
+              </footer>
+            ) : ('')}
+          </>
+        )}
       </main>
     </>
   );
