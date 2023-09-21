@@ -43,4 +43,8 @@ input[type="checkbox"]:checked + label {
   .tarefa label {
     font-size: .8rem;
   }
+
+  .tarefa .iconDeletaTarefa {
+    opacity: initial;
+  }
 }
