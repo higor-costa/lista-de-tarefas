@@ -69,6 +69,7 @@ form .campoNovaTarefa {
   color: var(--nome-tarefa);
   background: transparent;
   width: 85%;
+  padding-top: 4px;
 }
 
 form .campoNovaTarefa::placeholder {
