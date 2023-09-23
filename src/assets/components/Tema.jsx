@@ -35,6 +35,26 @@ const iconeTema = { cursor: 'pointer' };
 
 const Tema = () => {
   const [botao, setBotao] = React.useState(false);
+  const dispositivoMovel = useMedia('(max-width: 630px)');
+
+  function imagemFundoDinamica(botao) {
+    const cabecalho = document.querySelector('header');
+    
+    if (botao) {
+      {
+        dispositivoMovel
+          ? (cabecalho.style.background = imagemCabecalho.movelClaro)
+          : (cabecalho.style.background = imagemCabecalho.desktopClaro);
+      }
+    } else {
+      {
+        dispositivoMovel
+          ? (cabecalho.style.background = imagemCabecalho.movelEscuro)
+          : (cabecalho.style.background = imagemCabecalho.desktopEscuro);
+      }
+    } 
+  }
+  
 
   function alteraTema() {
     setBotao((botao) => !botao);
