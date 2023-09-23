@@ -58,6 +58,7 @@ const Tema = () => {
 
   function alteraTema() {
     setBotao((botao) => !botao);
+    imagemFundoDinamica(botao);
   }
 
   React.useEffect(() => {
