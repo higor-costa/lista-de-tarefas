@@ -7,6 +7,11 @@ import useMedia from '../hooks/useMedia';
 import { ReactComponent as Lua } from '../images/icon-moon.svg';
 import { ReactComponent as Sol } from '../images/icon-sun.svg';
 
+import { ReactComponent as DesktopEscuro } from '../images/bg-desktop-dark.jpg';
+import { ReactComponent as DesktopClaro } from '../images/bg-desktop-light.jpg';
+import { ReactComponent as MobileEscuro } from '../images/bg-mobile-dark.jpg';
+import { ReactComponent as MobileClaro } from '../images/bg-mobile-light.jpg';
+
 const temas = {
   claro: {
     '--body': 'hsl(236, 33%, 92%)',
@@ -25,10 +30,10 @@ const temas = {
 };
 
 const imagemCabecalho = {
-  movelClaro: 'url(../images/bg-mobile-light.jpg) center/cover no-repeat',
-  movelEscuro: 'url(../images/bg-mobile-dark.jpg) center/cover no-repeat',
-  desktopClaro: 'url(../images/bg-desktop-light.jpg) center/cover no-repeat',
-  desktopEscuro: 'url(../images/bg-desktop-dark.jpg) center/cover no-repeat',
+  movelClaro: {MobileClaro} + 'center/cover no-repeat',
+  movelEscuro: {MobileEscuro} + 'center/cover no-repeat',
+  desktopClaro: {DesktopEscuro} + 'center/cover no-repeat',
+  desktopEscuro: {DesktopClaro} + 'center/cover no-repeat',
 }
 
 const iconeTema = { cursor: 'pointer' };
