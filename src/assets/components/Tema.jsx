@@ -26,9 +26,9 @@ const temas = {
 
 const imagemCabecalho = {
   movelClaro: 'url(dist/assets/bg-mobile-light-df636158.jpg.jpg) center/cover no-repeat',
-  movelEscuro: 'url(/lista-de-tarefas/src/assets/images/bg-mobile-dark.jpg) center/cover no-repeat',
+  movelEscuro: 'url(dist/assets/bg-mobile-dark-0b3e4071.jpg) center/cover no-repeat',
   desktopClaro: 'url(dist/assets/bg-desktop-light-c99caf89.jpg) center/cover no-repeat',
-  desktopEscuro: 'url(/lista-de-tarefas/src/assets/images/bg-desktop-dark.jpg) center/cover no-repeat',
+  desktopEscuro: 'url(dist/assets/bg-desktop-dark-cf72eaad.jpg) center/cover no-repeat',
 }
 
 const iconeTema = { cursor: 'pointer' };
