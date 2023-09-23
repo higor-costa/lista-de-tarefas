@@ -16,5 +16,5 @@ export default defineConfig({
   server: {
     host: '0.0.0.0',
   },
-  base: '/to-do-list',
+  base: '/lista-de-tarefas',
 });
