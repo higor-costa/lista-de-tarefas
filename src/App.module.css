@@ -28,6 +28,10 @@ body {
 }
 
 .cabecalho {
+  background: url('./assets/images/bg-desktop-dark.jpg') center/cover no-repeat;
+}
+
+.cabecalho {
   height: 17rem;
   background: url('./assets/images/bg-desktop-light.jpg') center/cover no-repeat;
 }
@@ -141,6 +145,9 @@ footer button:hover {
 }
 
 @media screen and (max-width: 630px){
+  .cabecalho {
+    background: url('./assets/images/bg-mobile-dark.jpg') center/cover no-repeat;
+  }
   .cabecalho {
     background: url('./assets/images/bg-mobile-light.jpg') center/cover no-repeat;
   }

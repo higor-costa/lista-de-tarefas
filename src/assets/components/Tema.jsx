@@ -25,9 +25,9 @@ const temas = {
 };
 
 const imagemCabecalho = {
-  movelClaro: 'url(/lista-de-tarefas/src/assets/images/bg-mobile-light.jpg) center/cover no-repeat',
+  movelClaro: 'url(dist/assets/bg-mobile-light-df636158.jpg.jpg) center/cover no-repeat',
   movelEscuro: 'url(/lista-de-tarefas/src/assets/images/bg-mobile-dark.jpg) center/cover no-repeat',
-  desktopClaro: 'url(/lista-de-tarefas/src/assets/images/bg-desktop-light.jpg) center/cover no-repeat',
+  desktopClaro: 'url(dist/assets/bg-desktop-light-c99caf89.jpg) center/cover no-repeat',
   desktopEscuro: 'url(/lista-de-tarefas/src/assets/images/bg-desktop-dark.jpg) center/cover no-repeat',
 }
 
