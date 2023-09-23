@@ -47,7 +47,7 @@ const App = () => {
       <main className={styles.conteudo}>
         <header className={styles.conteudoCabecalho}>
           <div>
-            <h1>Todo</h1>
+            <h1>Tarefas</h1>
             <Tema />
           </div>
           <form>
