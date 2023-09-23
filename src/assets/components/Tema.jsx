@@ -1,5 +1,8 @@
 import React from 'react';
 
+// Importações
+import useMedia from '../hooks/useMedia';
+
 // SVG
 import { ReactComponent as Lua } from '../images/icon-moon.svg';
 import { ReactComponent as Sol } from '../images/icon-sun.svg';
